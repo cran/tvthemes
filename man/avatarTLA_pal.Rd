@@ -5,7 +5,7 @@
 \alias{scale_color_avatarTLA}
 \alias{scale_colour_avatarTLA}
 \alias{scale_fill_avatarTLA}
-\title{Avatar: The Last Airbender palette}
+\title{Avatar: The Last Airbender palette (deprecated)}
 \usage{
 avatarTLA_pal(palette = "FireNation", n, type = c("discrete",
   "continuous"), reverse = FALSE)
@@ -84,23 +84,4 @@ scales, "top" or "bottom" for horizontal scales}
 }
 \description{
 Avatar: The Last Airbender palette
-}
-\examples{
-library(scales)
-show_col(avatarTLA_pal()(5))
-
-library(ggplot2)
-ggplot(airquality, aes(x = Day, y = Temp,
-     group = as.factor(Month), color = as.factor(Month))) +
-     geom_point(size = 2.5) +
-     scale_color_avatarTLA()
-
-ggplot(airquality, aes(x = Day, y = Temp,
-     group = as.factor(Month), color = as.factor(Month))) +
-     geom_point(size = 2.5) +
-     scale_colour_avatarTLA()
-
-ggplot(mpg, aes(displ)) +
-     geom_histogram(aes(fill = class), col = "black", size = 0.1) +
-     scale_fill_avatarTLA()
 }

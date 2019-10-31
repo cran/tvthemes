@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_thelastairbender.R
 \name{theme_theLastAirbender}
 \alias{theme_theLastAirbender}
-\title{theme_theLastAirbender}
+\title{Avatar: The Last Airbender theme (deprecated)}
 \usage{
 theme_theLastAirbender(text.font = NULL, title.font = NULL,
   legend.font = NULL, title.size = 14, text.size = 10,
@@ -54,15 +54,6 @@ theme_theLastAirbender(text.font = NULL, title.font = NULL,
 }
 \description{
 Avatar: The Last Airbender theme, Recommended font: "Slayer"
-}
-\examples{
-library(ggplot2)
-
-ggplot(airquality, aes(x = Day, y = Temp,
-     group = as.factor(Month), color = as.factor(Month))) +
-     geom_point(size = 2.5) +
-     scale_color_avatarTLA() +
-     theme_theLastAirbender()
 }
 \seealso{
 [ggplot2::theme]

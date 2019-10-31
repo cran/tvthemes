@@ -1,5 +1,25 @@
+# tvthemes 1.1.0
+
+* New palette:
+  * Gravity Falls
+* New font:
+  * "Gravitation Falls"
+* Renamed functions to fit `*_camelCase()` style:
+  * `import_titilliumWeb()`, `import_robotoCondensed()`, `import_chelseaMarket()`
+* Renamed 'Avatar: The Last Airbender' functions:
+  * `scale_*_avatar()`, `theme_avatar()`
+* Deprecated functions:
+  * `import_titillium_web()`, `import_roboto_condensed()`, `scale_*_avatarTLA()`,
+  `theme_theLastAirbender()`
+* Deleted functions:
+  * `import_ChelseaMarket()` (replaced by `import_chelseaMarket()`)
+* Added `{packagedown}` website
+* Split README into vignettes
+* Added more tests
+
 # tvthemes 1.0.0
 
+* Released on CRAN! (September 3rd, 2019)
 * New palettes:
   * Kim Possible, Big Hero 6, Stannis Baratheon, House Manderly, House Martell, House Arryn, Hilda, & Attack on Titan
 * New themes:
@@ -11,6 +31,7 @@
   * `scale_fill_avatarTLA(palette = "EarthKingdom")`
 * Toggle ticks with `ticks = TRUE` or `ticks = FALSE`
 * More tests added
+* Improved documentation
 
 # tvthemes 0.0.0.9100
 
