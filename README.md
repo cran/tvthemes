@@ -13,6 +13,8 @@ maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www
 v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Coverage
 status](https://codecov.io/gh/Ryo-N7/tvthemes/branch/master/graph/badge.svg)](https://codecov.io/gh/Ryo-N7/tvthemes?branch=master/)
+[![R build
+status](https://github.com/Ryo-N7/tvthemes/workflows/R-CMD-check/badge.svg)](https://github.com/Ryo-N7/tvthemes/actions)
 <!-- badges: end -->
 
 [Ryo Nakagawara | Twitter: `@R_by_Ryo`](https://twitter.com/R_by_Ryo/)
@@ -27,10 +29,13 @@ custom `ggplot2` theme and color palettes so I decided to expand it to
 other shows that I love\! Suggestions and Pull Requests for
 palettes/themes are welcome\!
 
-  - [Intro to `tvthemes` blog
+  - [Package Website](https://ryo-n7.github.io/tvthemes/)
+  - [Intro to `tvthemes 0.0.0.9100` blog
     post](https://ryo-n7.github.io/2019-05-16-introducing-tvthemes-package/)
   - [`tvthemes 1.0.0` & CRAN release blog
     post](https://ryo-n7.github.io/2019-09-06-tvthemes-CRAN-announcement/)
+  - [`tvthemes 1.1.0` & CRAN release blog
+    post](https://ryo-n7.github.io/2019-11-04-tvthemes-1.1.0-announcement/)
 
 <!-- end list -->
 
@@ -86,7 +91,7 @@ You can install `tvthemes` by:
 ## for development version:
 devtools::install_github("Ryo-N7/tvthemes")
 
-## v1.0.0 is available on CRAN!
+## v1.1.0 is available on CRAN!
 install.packages("tvthemes")
 ```
 
@@ -104,8 +109,9 @@ See
 
 # Examples
 
-You can find the code for all the examples in the [“Examples”
-Vignette](https://ryo-n7.github.io/tvthemes/articles/examples.html).
+You can find the code for all the examples below in the [“Examples”
+Vignette](https://ryo-n7.github.io/tvthemes/articles/examples.html) on
+the [Package Website](https://ryo-n7.github.io/tvthemes/).
 
 ## Brooklyn Nine-Nine
 
@@ -201,3 +207,6 @@ Cunningham](http://www.nathancunn.com/2017-07-16-simpsons-characters/).
 Hilda palettes from [Matt
 Shanks](http://www.mattshanks.com.au/colour-palette-reference-hilda/)
 and [ChevyRay](https://pbs.twimg.com/media/DoeR9edWwAMG2hW.png).
+
+[“Some Time Later” font](https://github.com/ctrlcctrlv/some-time-later)
+courtesy of Frederick Brennan.

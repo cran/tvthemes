@@ -1,4 +1,4 @@
-## ---- include = FALSE----------------------------------------------------
+## ---- include = FALSE---------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   warning = FALSE, 
@@ -7,7 +7,7 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-## ----setup, eval=FALSE---------------------------------------------------
+## ----setup, eval=FALSE--------------------------------------------------------
 #  library(tvthemes)
 #  library(ggplot2)
 #  library(gapminder)
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 #  library(extrafont)
 #  loadfonts(quiet = TRUE)
 
-## ----b99header, eval=FALSE-----------------------------------------------
+## ----b99header, eval=FALSE----------------------------------------------------
 #  ggplot(mpg, aes(displ)) +
 #    geom_histogram(aes(fill = class),
 #                   col = "black", size = 0.1,
@@ -33,7 +33,7 @@ knitr::opts_chunk$set(
 #                     text.font = "Calibri Light",
 #                     subtitle.size = 14)
 
-## ----b99-light, eval=FALSE-----------------------------------------------
+## ----b99-light, eval=FALSE----------------------------------------------------
 #  ggplot(mpg, aes(displ)) +
 #    geom_histogram(aes(fill = class), col = "black", size = 0.1) +
 #    scale_fill_brooklyn99() +
@@ -44,7 +44,7 @@ knitr::opts_chunk$set(
 #                     title.font = "Roboto Condensed",
 #                     legend.font = "Calibri Light")
 
-## ----bobspog, eval=FALSE-------------------------------------------------
+## ----bobspog, eval=FALSE------------------------------------------------------
 #  bobspog_plot <- ggplot(mpg, aes(displ)) +
 #    geom_histogram(aes(fill = class), col = "black", size = 0.1) +
 #    scale_fill_spongeBob() +
@@ -61,7 +61,7 @@ knitr::opts_chunk$set(
 #  
 #  bobspog_plot
 
-## ----bobspog-bkg, eval=FALSE---------------------------------------------
+## ----bobspog-bkg, eval=FALSE--------------------------------------------------
 #  ## use a themed background! Inspired by ggpomological::paint_pomological()!
 #  paintBikiniBottom(plot = bobspog_plot,
 #                    background = "background")
@@ -103,7 +103,7 @@ knitr::opts_chunk$set(
 #  ## patchwork together:
 #  stark + tully - targaryen + plot_layout(ncol = 1)
 
-## ----TyrellLannisterGreyjoy, fig.width=15, fig.height = 10, eval=FALSE----
+## ----TyrellLannisterGreyjoy, fig.width=15, fig.height = 10, eval=FALSE--------
 #  data <- gapminder::gapminder %>%
 #    filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan", "Norway", "Belarus")) %>%
 #    mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
@@ -145,7 +145,7 @@ knitr::opts_chunk$set(
 #  ## patchwork together:
 #  tyrell + lannister - greyjoy + plot_layout(ncol = 1)
 
-## ----ArrynManderlyMartell, fig.width=15, fig.height = 10, eval=FALSE-----
+## ----ArrynManderlyMartell, fig.width=15, fig.height = 10, eval=FALSE----------
 #  ggplot(mpg, aes(displ)) +
 #    geom_histogram(aes(fill = class), col = "black", size = 0.1) +
 #    scale_fill_westeros(palette = "Arryn", n = 7) +
@@ -192,7 +192,7 @@ knitr::opts_chunk$set(
 #  ## patchwork together:
 #  arryn + manderly - martell + plot_layout(ncol = 1)
 
-## ----Stannis, fig.width=13, fig.height = 10------------------------------
+## ----Stannis, fig.width=13, fig.height = 10-----------------------------------
 #  ggplot(mpg, aes(displ)) +
 #    geom_histogram(aes(fill = class), col = "black", size = 0.1) +
 #    scale_fill_westeros(palette = "Stannis", n = 7, reverse = TRUE) +
@@ -215,7 +215,7 @@ knitr::opts_chunk$set(
 #          axis.text = element_text(size = 18),
 #          legend.position = "none")
 
-## ----Simpsons, eval=FALSE------------------------------------------------
+## ----Simpsons, eval=FALSE-----------------------------------------------------
 #  data <- gapminder::gapminder %>%
 #    filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan", "Norway", "Belarus")) %>%
 #    mutate(year = as.Date(paste(year, "-01-01", sep = "", format='%Y-%b-%d')))
@@ -236,7 +236,7 @@ knitr::opts_chunk$set(
 #                   text.font = "Akbar",
 #                   axis.text.size = 8)
 
-## ----R&M-----------------------------------------------------------------
+## ----R&M----------------------------------------------------------------------
 #  ggplot(diamonds, aes(price, fill = cut)) +
 #    geom_histogram(binwidth = 500) +
 #    scale_fill_rickAndMorty() +
@@ -247,7 +247,7 @@ knitr::opts_chunk$set(
 #                       text.font = "Get Schwifty",
 #                       title.size = 14)
 
-## ----ATLA, fig.width=15, fig.height = 10, message=FALSE, eval=FALSE------
+## ----ATLA, fig.width=15, fig.height = 10, message=FALSE, eval=FALSE-----------
 #  ggplot(mpg, aes(displ)) +
 #    geom_histogram(aes(fill = class), col = "black", size = 0.1) +
 #    scale_fill_avatar(palette = "FireNation") +
@@ -295,7 +295,7 @@ knitr::opts_chunk$set(
 #  ## plot together:
 #  plot_grid(firenation, airnomads, watertribe, earthkingdom, ncol = 2)
 
-## ----P&R, fig.width=14, fig.height = 6, message=FALSE, eval=FALSE--------
+## ----P&R, fig.width=14, fig.height = 6, message=FALSE, eval=FALSE-------------
 #  airquality %>%
 #    mutate(Month = as.factor(Month)) %>%
 #    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -323,7 +323,7 @@ knitr::opts_chunk$set(
 #  ## plot together:
 #  plot_grid(parksandrec, parksandreclight, ncol = 2)
 
-## ----AoT,fig.width=10, fig.height = 6, eval=FALSE------------------------
+## ----AoT,fig.width=10, fig.height = 6, eval=FALSE-----------------------------
 #  img <- png::readPNG(system.file("backgrounds/aot-titan.png",
 #                                  package = "tvthemes"))
 #  
@@ -340,7 +340,7 @@ knitr::opts_chunk$set(
 #      theme_parksAndRec(text.font = "Roboto Condensed",
 #                        title.font = "Roboto Condensed")
 
-## ----KimPossible, fig.width=10, fig.height = 6, eval=FALSE---------------
+## ----KimPossible, fig.width=10, fig.height = 6, eval=FALSE--------------------
 #  data <- gapminder::gapminder %>%
 #    filter(country %in% c("France", "Germany", "Ireland", "Italy",
 #                          "Japan", "Norway", "Belarus", "United Kingdom",
@@ -406,7 +406,7 @@ knitr::opts_chunk$set(
 #  ## plot together:
 #  plot_grid(bigherobar, bigherodot, ncol = 2)
 
-## ----Hilda, fig.width=17, fig.height = 10, message=FALSE, eval=FALSE-----
+## ----Hilda, fig.width=17, fig.height = 10, message=FALSE, eval=FALSE----------
 #  airquality %>%
 #    mutate(Month = as.factor(Month)) %>%
 #    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +

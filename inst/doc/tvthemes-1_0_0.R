@@ -1,14 +1,14 @@
-## ---- include = FALSE----------------------------------------------------
+## ---- include = FALSE---------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 
-## ----setup---------------------------------------------------------------
+## ----setup--------------------------------------------------------------------
 library(tvthemes)
 library(ggplot2)
 
-## ---- eval=FALSE---------------------------------------------------------
+## ---- eval=FALSE--------------------------------------------------------------
 #  ## Previously:
 #  scales::show_col(tvthemes:::lannister_palette)
 #  scales::show_col(tvthemes:::brooklyn99_dark_palette)
@@ -17,13 +17,13 @@ library(ggplot2)
 #  scales::show_col(tvthemes:::westeros_palette$Lannister)
 #  scales::show_col(tvthemes:::brooklyn99_palette$Dark)
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  ## Plot not shown
 #  ggplot(mpg, aes(displ)) +
 #    geom_histogram(aes(fill = class), col = "black", size = 0.1) +
 #    scale_fill_westeros(palette = "Stannis", n = 7, reverse = TRUE)
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  ## Plot not shown
 #  ggplot(mpg, aes(displ)) +
 #    geom_histogram(aes(fill = class), col = "black", size = 0.1) +

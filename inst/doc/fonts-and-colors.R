@@ -1,4 +1,4 @@
-## ---- include = FALSE----------------------------------------------------
+## ---- include = FALSE---------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   warning = FALSE, 
@@ -6,7 +6,7 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-## ---- eval=FALSE---------------------------------------------------------
+## ---- eval=FALSE--------------------------------------------------------------
 #  library(tvthemes)
 #  
 #  import_simpsons()         ## "Akbar" font
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 #  library(extrafont)
 #  loadfonts() ## You need to do this at the beginning of a session.
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 scales::show_col(tvthemes:::brooklyn99_palette$Dark)
 scales::show_col(tvthemes:::gravityFalls_palette)
 scales::show_col(tvthemes:::simpsons_palette)
