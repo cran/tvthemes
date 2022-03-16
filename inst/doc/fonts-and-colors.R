@@ -27,4 +27,5 @@ knitr::opts_chunk$set(
 scales::show_col(tvthemes:::brooklyn99_palette$Dark)
 scales::show_col(tvthemes:::gravityFalls_palette)
 scales::show_col(tvthemes:::simpsons_palette)
+scales::show_col(tvthemes:::stevenUniverse_palette$Peridot)
 

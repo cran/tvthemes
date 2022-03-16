@@ -26,7 +26,7 @@ knitr::opts_chunk$set(
 #                   binwidth = 0.1) +
 #    scale_fill_brooklyn99(palette = "Dark") +
 #    labs(title = "Do you know what it means to 'clap back', Raymond?",
-#         subtitle = glue("BE- {emo::ji('clap')} -CAUSE {emo::ji('clap')} I {emo::ji('clap')} DO {emo::ji('clap')} !"),
+#         subtitle = glue::glue("BE- {emo::ji('clap')} -CAUSE {emo::ji('clap')} I {emo::ji('clap')} DO {emo::ji('clap')} !"),
 #         x = "Titles of Your Sex Tape",
 #         caption = "Pizza bagels? Pizza rolls? Pizza poppers? Pizzaritos? Pizza pockets?") +
 #    theme_brooklyn99(title.font = "Titillium Web",
@@ -468,4 +468,39 @@ knitr::opts_chunk$set(
 #                 subtitle.size = 20,
 #                 text.size = 18,
 #                 legend.position = "none")
+
+## ----stevenUniverse, fig.width=14, fig.height = 6, message=FALSE, eval=FALSE----
+#  data <- gapminder::gapminder %>%
+#    filter(country %in% c("Ireland", "Italy", "Turkey", "France", "Germany",
+#                          "Brazil", "Mexico", "Sweden")) %>%
+#    mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')),
+#           image = "")
+#  
+#  ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+#    geom_area(alpha = 0.9) +
+#    scale_x_date(expand = c(0, 0), breaks = data$year, date_labels = "%Y") +
+#    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+#    scale_fill_stevenUniverse(palette = "Steven", reverse = FALSE) +
+#    labs(title = stringr::str_wrap("I just can't believe you guys are like a bazillion years old! How do you find a cake big enough for all that many candles?", width = 70),
+#  subtitle = "Square pizza!? What's wrong with this crazy state!?",
+#  caption = "Yay, Lion!",
+#  x = "Years Since The Gem War", y = "Revenue (in $) from COOKIE CAT sold!") +
+#    theme_avatar(title.size = 24,
+#                 subtitle.size = 20,
+#                 text.font = "Titillium Web",
+#                 text.size = 20,
+#                 legend.position = "none")
+
+## ----CrystalGems, fig.width=11, fig.height = 8, eval=FALSE, message=FALSE-----
+#  ggplot(diamonds, aes(price, fill = cut)) +
+#    geom_histogram(binwidth = 500) +
+#    scale_fill_stevenUniverse(palette = "CrystalGems") +
+#    labs(title = stringr::str_wrap("We... Are The Crystal Gems! We'll Always Save The Day! And If You Think We Can't, We'll Always Find A Way!", width = 70),
+#         subtitle = stringr::str_wrap("That's Why The People Of This World... Believe In: Garnet, Amethyst... Aaand Pearl!", width = 70),
+#         caption = "... AND STEVEN!") +
+#    theme_spongeBob(title.size = 24,
+#                    subtitle.size = 20,
+#                    text.font = "Titillium Web",
+#                    text.size = 18,
+#                    legend.position = "none")
 
